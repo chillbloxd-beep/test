@@ -1,0 +1,2 @@
+import { state } from "../core/state.js";import { escapeHtml } from "../core/diagnostics.js";
+export function render(root){root.innerHTML=`<section class="card"><h2>Planning History</h2><div class="timeline">${state.planningHistory.map(h=>`<div class="timeline-item"><b>${new Date(h.time).toLocaleTimeString()} — ${escapeHtml(h.event)}</b><pre>${escapeHtml(JSON.stringify(h.data,null,2))}</pre></div>`).join("")||"<p>No planning history yet.</p>"}</div></section>`;}

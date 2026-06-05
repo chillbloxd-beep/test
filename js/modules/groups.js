@@ -1,0 +1,7 @@
+import { state, saveLocal, allDevices } from "../core/state.js";
+import { escapeHtml } from "../core/diagnostics.js";
+export function render(root){
+  root.innerHTML = `<section class="grid2"><div class="card"><h2>Groups</h2><label>Group ID</label><input id="gid" value="test-devices"><label>Display name</label><input id="gname" value="Test Devices"><label>Devices</label><div>${allDevices().map(d=>`<label><input type="checkbox" class="gdev" value="${escapeHtml(d.deviceId)}"> ${escapeHtml(d.deviceName||d.deviceId)}</label><br>`).join("")||"<p>No devices online yet.</p>"}</div><button id="saveGroup">Save Group</button></div><div class="card"><h2>Saved Groups</h2>${state.savedGroups.map((g,i)=>`<div class="rule-card"><h3>${escapeHtml(g.name)}</h3><p>${escapeHtml(g.id)}</p><p>${g.devices.map(escapeHtml).join(", ")}</p><button data-del-group="${i}" class="danger">Delete</button></div>`).join("")||"<p>No groups.</p>"}</div></section>`;
+  document.getElementById("saveGroup").onclick=()=>{const devices=[...root.querySelectorAll(".gdev:checked")].map(x=>x.value);state.savedGroups.unshift({id:document.getElementById("gid").value,name:document.getElementById("gname").value,devices,createdAt:Date.now()});saveLocal();render(root);};
+  root.querySelectorAll("[data-del-group]").forEach(b=>b.onclick=()=>{state.savedGroups.splice(Number(b.dataset.delGroup),1);saveLocal();render(root);});
+}
