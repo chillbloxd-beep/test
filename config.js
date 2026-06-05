@@ -1,0 +1,18 @@
+export const APP_CONFIG = {
+  WORKER_BASE_URL: "https://brick-classroom-d1.lumjayvian.workers.dev",
+  ROOM_ID: "brick-room-001",
+  API_KEY: "ZER0PING5GWIFI$$qwerty",
+  DEFAULT_DEVICE_ID: "nb-windows",
+  DEFAULT_CHROME_ID: "nb-windows-chrome",
+  DEFAULT_EDGE_ID: "nb-windows-edge",
+  DEFAULT_FPS: 2,
+  DEFAULT_JPEG_QUALITY: 67,
+  LOW_BANDWIDTH_FPS: 1,
+  LOW_BANDWIDTH_JPEG: 30,
+  DIAGNOSTIC_TIMEOUT_MS: 5000,
+  AUTO_CONNECT_ON_LOAD: false,
+  STALE_DEVICE_SECONDS: 35,
+  FROZEN_FRAME_SECONDS: 30,
+  HIGH_DEVICE_PING_MS: 1000,
+  HIGH_LIVE_PING_MS: 2500
+};

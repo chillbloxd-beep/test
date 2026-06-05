@@ -1,0 +1,64 @@
+OK - config.js
+OK - js/app.js
+OK - js/core/state.js
+OK - js/core/diagnostics.js
+OK - js/core/worker.js
+OK - js/core/ui.js
+OK - js/modules/home.js
+OK - js/modules/devices.js
+OK - js/modules/live.js
+OK - js/modules/windows.js
+OK - js/modules/browser.js
+OK - js/modules/planning.js
+OK - js/modules/policies.js
+OK - js/modules/plans.js
+OK - js/modules/groups.js
+OK - js/modules/history.js
+OK - js/modules/sessions.js
+OK - js/modules/health.js
+OK - js/modules/install.js
+OK - js/modules/configgen.js
+OK - js/modules/debugger.js
+OK - js/modules/logs.js
+OK - js/modules/advanced.js
+OK - js/modules/settings.js
+OK - exists index.html
+OK - exists style.css
+OK - exists config.js
+OK - exists js/app.js
+OK - exists js/core/state.js
+OK - exists js/core/diagnostics.js
+OK - exists js/core/worker.js
+OK - exists js/core/ui.js
+OK - exists js/modules/planning.js
+OK - exists js/modules/policies.js
+OK - exists js/modules/plans.js
+OK - exists js/modules/groups.js
+OK - exists js/modules/history.js
+OK - exists js/modules/install.js
+OK - exists js/modules/configgen.js
+OK - Diagnostics tab
+OK - Diagnostic export
+OK - Lazy loading
+OK - Policies tab
+OK - Plans schedules
+OK - Groups manager
+OK - Planning history
+OK - Install setup
+OK - Config generator
+OK - Stale/frozen warnings
+OK - Pairing overview
+OK - Planning templates
+OK - High lag trigger
+OK - Browser companion Chrome Edge
+OK - Windows controls
+OK - Live popout
+OK - Ping support
+OK - Low bandwidth
+OK - Clean logs
+OK - Dirty logs
+OK - Advanced command center
+
+OVERALL: OK
+
+Note: Local checks include syntax, required-file, and feature-presence checks. Live Worker/agent behavior must be tested after hosting.
